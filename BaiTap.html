@@ -36,29 +36,46 @@
 <!--            document.getElementById("tich").innerHTML="Ket Qua =" +c;-->
 <!--        }-->
 
-
-
 <!--    </script>-->
 
-<input type="number" id="canh"><br><br>
 
 
-<button type="button"  onclick="dientich()" >DienTich</button>
-<button type="button"  onclick="chuvi()" >ChuVi</button>
-<p id="KetQua">Ket Qua</p>
+<!--//bai 4a:-->
+<!--<input type="number" id="canh"><br><br>-->
+
+<!--<button type="button"  onclick="dientich()" >DienTich</button>-->
+<!--<button type="button"  onclick="chuvi()" >ChuVi</button>-->
+<!--<p id="KetQua">Ket Qua</p>-->
+<!--<script>-->
+<!--    function dientich() {-->
+<!--        let a=document.getElementById("canh").value;-->
+<!--        let S=a*a;-->
+<!--        document.getElementById("KetQua").innerHTML="Dien Tich=:"+S-->
+<!--    }-->
+<!--    function chuvi() {-->
+<!--        let a=document.getElementById("canh").value;-->
+<!--        let P=a*4;-->
+<!--        document.getElementById("KetQua").innerHTML="Chu Vi=:" +P;-->
+<!--    }-->
+<!--</script>-->
+
+<!--//Bai 4b:-->
+
+<input type="number" id="sothu1">
+<input type="number" id="sothu2"> <br>
+<br>
+<button type="button" onclick="click()">click</button>
+<p id="ketqua">Ket Qua :</p>
 <script>
-    function dientich() {
-        let a=document.getElementById("canh").value;
-        let S=a*a;
-        document.getElementById("KetQua").innerHTML="Dien Tich=:"+S
+    function click() {
+        let a = parseInt(document.getElementById("sothu1").value);
+        let b = parseInt(document.getElementById("sothu2").value);
+        let ab = a*b;
+        let aa = a*a;
+        document.getElementById("ketqua").innerHTML = "Ket Qua:=" +ab; +aa;
     }
-    function chuvi() {
-        let a=document.getElementById("canh").value;
-        let P=a*4;
-        document.getElementById("KetQua").innerHTML="Chu Vi=:" +P;
-    }
-
 </script>
+
 
 
 </body>
