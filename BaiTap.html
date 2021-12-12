@@ -23,23 +23,42 @@
 <!--    // document.getElementById(id của input).valua;-->
 
 
-    <input type="number" name="so a" id="sothu1">
-    <input type="nuber" name="so b" id="sothu2"><br><br>
+<!--    <input type="number" name="so a" id="sothu1">-->
+<!--    <input type="nuber" name="so b" id="sothu2"><br><br>-->
 
-    <button type="button" id="pheptinh" onclick="nhanvao()" >click</button>
-    <h1 id="tich"></h1>
-    <script>
-        function nhanvao() {
-            let a=document.getElementById("sothu1").value;
-            let b=document.getElementById("sothu2").value;
-            let c=a*b;
-            document.getElementById("tich").innerHTML="Ket Qua =" +c;
-        }
+<!--    <button type="button" id="pheptinh" onclick="nhanvao()" >click</button>-->
+<!--    <h1 id="tich"></h1>-->
+<!--    <script>-->
+<!--        function nhanvao() {-->
+<!--            let a=document.getElementById("sothu1").value;-->
+<!--            let b=document.getElementById("sothu2").value;-->
+<!--            let c=a*b;-->
+<!--            document.getElementById("tich").innerHTML="Ket Qua =" +c;-->
+<!--        }-->
 
 
 
-    </script>
+<!--    </script>-->
 
+<input type="number" id="canh"><br><br>
+
+
+<button type="button"  onclick="dientich()" >DienTich</button>
+<button type="button"  onclick="chuvi()" >ChuVi</button>
+<p id="KetQua">Ket Qua</p>
+<script>
+    function dientich() {
+        let a=document.getElementById("canh").value;
+        let S=a*a;
+        document.getElementById("KetQua").innerHTML="Dien Tich=:"+S
+    }
+    function chuvi() {
+        let a=document.getElementById("canh").value;
+        let P=a*4;
+        document.getElementById("KetQua").innerHTML="Chu Vi=:" +P;
+    }
+
+</script>
 
 
 </body>
