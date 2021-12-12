@@ -5,21 +5,42 @@
     <title>Bai1</title>
 </head>
 <body>
-<script>
-    //bai1.1 câu lệnh nhập hộp thoại
-    //prompt("nhập tên của bạn")
-    // bài 1.2 hiển thi tên lên hộp thoại dung alert
-    //alert("Mai tien viet")
+
+<!--    //bai1.1 câu lệnh nhập hộp thoại-->
+<!--    //prompt("nhập tên của bạn")-->
+<!--    // bài 1.2 hiển thi tên lên hộp thoại dung alert-->
+<!--    //alert("Mai tien viet")-->
 
 
-    //bai 2.1 câu lệnh nhận giá trị từ hộp thoại  let, var, const
+<!--    //bai 2.1 câu lệnh nhận giá trị từ hộp thoại  let, var, const-->
 
-    //bai 2.2 viết code nhập giá trị tù hộp thoại. hiển thị bình phuong ra hộp thoại
-    let a= parseInt (prompt("nhap so"));
-    let b=a*a;
-    alert(b);
+<!--    // //bai 2.2 viết code nhập giá trị tù hộp thoại. hiển thị bình phuong ra hộp thoại-->
+<!--    // let a= parseInt (prompt("nhap so"));-->
+<!--    // let b=a*a;-->
+<!--    // alert(b);-->
+
+<!--    //bai 3:caua lệnh giá trị tuqf 1 ô input-->
+<!--    // document.getElementById(id của input).valua;-->
 
 
-</script>
+    <input type="number" name="so a" id="sothu1">
+    <input type="nuber" name="so b" id="sothu2"><br><br>
+
+    <button type="button" id="pheptinh" onclick="nhanvao()" >click</button>
+    <h1 id="tich"></h1>
+    <script>
+        function nhanvao() {
+            let a=document.getElementById("sothu1").value;
+            let b=document.getElementById("sothu2").value;
+            let c=a*b;
+            document.getElementById("tich").innerHTML="Ket Qua =" +c;
+        }
+
+
+
+    </script>
+
+
+
 </body>
 </html>
